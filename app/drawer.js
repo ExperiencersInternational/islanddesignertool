@@ -1276,8 +1276,12 @@
       var twitterButton = createMenuButton('Twitter', 'img/menu-twitt.png', 0,
         function() {window.open('https://twitter.com/island_designer', '_blank')});
       twitterButton.position = new Point(0, 210);
+      
+      var shareButton = createMenuButton('Share', 'img/menu-share.png', 0,
+        function() {window.open('share.html', '_blank')});
+      shareButton.position = new Point(0, 400)
 
-      mainMenu.data.contents.addChildren([saveButton, loadButton, newButton, twitterButton]);
+      mainMenu.data.contents.addChildren([saveButton, loadButton, newButton, twitterButton, shareButton]);
       mainMenu.opacity = 0;
     }
     mainMenu.tweenTo({opacity: isShown ? 1 : 0}, 200);
