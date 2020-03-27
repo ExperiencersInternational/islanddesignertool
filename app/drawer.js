@@ -1279,7 +1279,7 @@
       
       var shareButton = createMenuButton('Share', 'img/menu-share.png', 0,
         function() {window.open('share.html', '_blank')});
-      shareButton.position = new Point(0, 400)
+      shareButton.position = new Point(180, 210)
 
       mainMenu.data.contents.addChildren([saveButton, loadButton, newButton, twitterButton, shareButton]);
       mainMenu.opacity = 0;
